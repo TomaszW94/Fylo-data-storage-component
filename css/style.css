@@ -1,0 +1,181 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  line-height: 1.5;
+  background: url("../images/bg-mobile.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fylo-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fylo-control-btns-bar {
+  background-color: #1d2c67;
+  padding: 2rem;
+  border-top-right-radius: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fylo-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.fylo-btns .btn {
+  background-color: #0c122c;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.fylo-btns .btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.data-usage {
+  color: #dddbff;
+  background-color: #1d2c67;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.data-usage__heading {
+  text-align: center;
+}
+
+.how-much-used {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.used-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0c122c;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 2rem;
+  height: 20px;
+}
+
+.progress-bar {
+  background: -webkit-gradient(linear, right top, left top, from(#ff4d97), to(#ffa399));
+  background: linear-gradient(to left, #ff4d97, #ffa399);
+  border-radius: 2rem;
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.progress-bar__dot {
+  width: 12px;
+  height: 12px;
+  margin: 0.2rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: auto;
+}
+
+.info {
+  position: absolute;
+  background-color: white;
+  color: #1d2c67;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 1rem;
+  height: 5rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info__number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.info__unit {
+  margin-left: 0.5rem;
+}
+
+.how-much-data-to-use {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

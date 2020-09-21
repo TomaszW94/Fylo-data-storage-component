@@ -1,0 +1,112 @@
+*,*::before,*::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+//Colors
+
+//Primary
+
+$gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+//Neutral
+
+$paleBlue: hsl(243, 100%, 93%)
+$grayishBlue: hsl(229, 7%, 55%)
+$darkBlue: hsl(228, 56%, 26%)
+$veryDarkBlue: hsl(229, 57%, 11%)
+
+body
+    font-family: 'Raleway', sans-serif
+    font-size: 14px
+    min-height: 100vh
+    line-height: 1.5
+    background: url('../images/bg-mobile.png')
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.fylo-container
+    width: 90%
+    margin: 0 auto
+
+.fylo-control-btns-bar
+    background-color: $darkBlue
+    padding: 2rem
+    border-top-right-radius: 4rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+.fylo-btns
+    display: flex
+    margin-top: 1rem
+    .btn
+        background-color: $veryDarkBlue
+        padding: 0.8rem
+        border-radius: 0.5rem
+    .btn:not(:last-child)
+        margin-right: 1rem
+
+.data-usage
+    color: $paleBlue
+    background-color: $darkBlue
+    margin-top: 2rem
+    padding: 2rem
+    display: flex
+    flex-direction: column
+    &__heading
+        text-align: center
+
+.how-much-used
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+    
+.used-bar
+    display: flex
+    background-color: $veryDarkBlue
+    width: 100%
+    margin: 0.5rem 0
+    border-radius: 2rem
+    height: 20px
+.progress-bar
+    background: linear-gradient(to left, hsl(335, 100%, 65%),hsl(6, 100%, 80%))
+    border-radius: 2rem
+    width: 20%
+    align-items: center
+    display: flex
+    &__dot
+        width: 12px
+        height: 12px
+        margin: 0.2rem
+        border-radius: 50%
+        background-color: white
+        margin-left: auto
+.info
+    position: absolute
+    background-color: white
+    color: $darkBlue
+    left: 50%
+    top: 100%
+    transform: translateX(-50%)
+    border-radius: 1rem
+    height: 5rem
+    width: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    &__number
+        font-size: 2rem
+        font-weight: 700
+    &__unit
+        margin-left: 0.5rem
+.how-much-data-to-use
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+.attribution 
+    font-size: 11px; text-align: center
+    a
+        color: hsl(228, 45%, 44%)
