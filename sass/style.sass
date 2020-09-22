@@ -20,43 +20,85 @@ $veryDarkBlue: hsl(229, 57%, 11%)
 body
     font-family: 'Raleway', sans-serif
     font-size: 14px
-    min-height: 100vh
     line-height: 1.5
+    height: 100vh
     background: url('../images/bg-mobile.png')
+    background-repeat: no-repeat
+    background-size: cover
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: space-between
+    @media (min-width:1440px)
+        background: url('../images/bg-desktop.png') $veryDarkBlue
+        background-repeat: no-repeat
+        background-size: 100% 50%
+        background-position: center bottom
 
+.animate__bounceIn
+    animation-delay: 1.5s
 .fylo-container
-    width: 90%
-    margin: 0 auto
+    width: 87%
+    margin: auto
+    @media screen and (min-width: 640px)
+        width: 60%
+    @media screen and (min-width: 768px)
+        width: 55%
+    @media screen and (min-width: 1024px)
+        width: 45%
+    @media (min-width:1440px)
+        display: flex
+        width: 100%
+        max-width: 1600px
+        justify-content: center
+        align-items: center
 
 .fylo-control-btns-bar
     background-color: $darkBlue
-    padding: 2rem
-    border-top-right-radius: 4rem
+    height: 203px
+    border-top-right-radius: 7rem
+    border-bottom-left-radius: 6px
+    border-bottom-right-radius: 6px
     display: flex
     flex-direction: column
     justify-content: center
+    @media (min-width:1440px)
+        width: 20%
+        margin-right: 80px
+.fylo-logo
+    margin-bottom: 6px
+    margin-left: 42px
 .fylo-btns
     display: flex
-    margin-top: 1rem
+    margin-left: 42px
+    margin-top: 19px
     .btn
         background-color: $veryDarkBlue
         padding: 0.8rem
         border-radius: 0.5rem
+        @media (min-width:1440px)
+            padding: 1rem
     .btn:not(:last-child)
         margin-right: 1rem
 
 .data-usage
     color: $paleBlue
     background-color: $darkBlue
-    margin-top: 2rem
-    padding: 2rem
+    margin-top: 13px
+    height: 156px
     display: flex
     flex-direction: column
+    @media (min-width:1440px)
+        width: 40%
+        height: 100%
+        margin-top: 0px
+        justify-content: center
     &__heading
         text-align: center
+        margin-top: 29px
+        @media (min-width:1440px)
+            text-align: left
+            width: 79%
+            margin: 0 auto
 
 .how-much-used
     display: flex
@@ -67,46 +109,84 @@ body
 .used-bar
     display: flex
     background-color: $veryDarkBlue
-    width: 100%
-    margin: 0.5rem 0
-    border-radius: 2rem
+    width: 79%
+    margin: 16px auto 8px auto
     height: 20px
+    border-radius: 2rem
+    border: 3px solid black
 .progress-bar
     background: linear-gradient(to left, hsl(335, 100%, 65%),hsl(6, 100%, 80%))
     border-radius: 2rem
-    width: 20%
+    width: 81.5%
     align-items: center
     display: flex
     &__dot
         width: 12px
         height: 12px
-        margin: 0.2rem
+        margin: 2px
         border-radius: 50%
         background-color: white
         margin-left: auto
 .info
-    position: absolute
     background-color: white
     color: $darkBlue
-    left: 50%
-    top: 100%
-    transform: translateX(-50%)
     border-radius: 1rem
-    height: 5rem
+    height: 74px
     width: 50%
     display: flex
     align-items: center
+    margin: 0 auto
     justify-content: center
+    position: relative
+    @media screen and (min-width: 768px)
+        width: 45%
+    @media screen and (min-width: 1024px)
+        width: 35%
+    @media (min-width:1440px)
+        width: 25%
+        position: absolute
+        bottom: 100%
+        right: 11%
+        &::after
+            content: ""
+            position: absolute
+            border-left: 40px solid transparent
+            border-top: 40px solid white
+            bottom: 0
+            right: 0
+            transform: translateY(60%)
     &__number
-        font-size: 2rem
+        font-size: 38px
         font-weight: 700
     &__unit
         margin-left: 0.5rem
+        font-size: 15px
+        text-transform: uppercase
+        @media (min-width:1440px)
+            font-size: 12px
 .how-much-data-to-use
     display: flex
     flex-direction: row
     justify-content: space-between
-.attribution 
-    font-size: 11px; text-align: center
+    width: 81%
+    margin: 0 auto
+.footer
+    display: flex
+    justify-content: center
+
+.attribution
+    font-size: 10px 
+    text-align: center
+    color: $paleBlue
+    padding: 5px 0
+    letter-spacing: 2px
+    @media screen and (min-width: 768px)
+        font-size: 16px
+    @media screen and (min-width: 1024px)
+        font-size: 16px
+    @media (min-width:1440px)
+        font-size: 16px
     a
         color: hsl(228, 45%, 44%)
+        color: $paleBlue
+        text-decoration: none
